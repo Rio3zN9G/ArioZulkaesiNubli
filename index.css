@@ -1,0 +1,87 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #e50f0f;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .photo {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        nav a {
+            color: #ec3333;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #f12323;
+            color: #fff;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .section h2 {
+            margin-bottom: 1em;
+            color: #ef1717;
+        }
+        .project {
+            margin-bottom: 2em;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .project h3 {
+            margin: 0 0 0.5em;
+            color: #ea1a1a;
+        }
+        .project p {
+            margin: 0;
+            color: #666;
+        }
+        .contact-info p {
+            margin: 0.5em 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f30606;
+            color: #fff;
+            margin-top: 2em;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
