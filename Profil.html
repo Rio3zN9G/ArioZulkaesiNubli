@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #e50f0f;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .photo {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        nav a {
+            color: #ec3333;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #f12323;
+            color: #fff;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        .section h2 {
+            margin-bottom: 1em;
+            color: #ef1717;
+        }
+        .project {
+            margin-bottom: 2em;
+            border: 1px solid #ddd;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .project h3 {
+            margin: 0 0 0.5em;
+            color: #ea1a1a;
+        }
+        .project p {
+            margin: 0;
+            color: #666;
+        }
+        .contact-info p {
+            margin: 0.5em 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f30606;
+            color: #fff;
+            margin-top: 2em;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollLinks = document.querySelectorAll("nav a");
+            
+            scrollLinks.forEach(link => {
+                link.addEventListener("click", event => {
+                    event.preventDefault();
+                    const targetId = link.getAttribute("href");
+                    const targetElement = document.querySelector(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Ario Zulkaesi Nubli</h1>
+        <p>XI RpL 2 | SMK Pertiwi Kuningan</p>
+    </header>
+    <div class="container">
+        <div class="photo">
+            <img src="profil.png" alt="Ario Zulkaesi Nubli">
+        </div>
+        <nav>
+            <a href="#about">Tentang</a> 
+            <a href="#projects">Pengalaman</a> 
+            <a href="#contact">Kontak</a>
+        </nav>
+        <div id="about" class="section">
+            <h2>Tentang</h2>
+            <p>Aku adalah salah satu dari siswa/i di SMK Pertiwi Kuningan dengan minat belajar yang tinggi yang di buktikan dengan beberapa pengalaman seputar dunia organisasi & informasi</p>
+        </div>
+        <div id="projects" class="section">
+            <h2>Pengalaman</h2>
+            <div class="project">
+                <h3>Wakorda Kuningan Forum Osis Tingkat Provinsi</h3>
+                <p>Menjadi Wakil Kordinator Daerah Kuningan untuk di kepengurusan Forum Osis Jawa Barat sampai Februari mendatang dan di lanjut sebagai Kordinator Daerah Kuningan</p>
+            </div>
+            <div class="project">
+                <h3>Sie.PTIK</h3>
+                <p>•Desaign Grapis<br>
+                •Desaign Vidio<br>
+                •Konten<br>
+                •Denah<br>
+                •Marketing</p>
+            </div>
+            <div class="project">
+                <h3>Kejuruan Rekayasa Perangkat Lunak</h3>
+                <p>•Web Desaign<br>
+                •Front-End Dev<br> </p>
+            </div>
+        </div>
+        <div id="contact" class="section">
+            <h2>Kontak </h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:azn6695@gmail.com">azn6695@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+6281327414126">+6281327414126</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Allright Reverse Ario Z.N 2k24</p>
+    </footer>
+</body>
+</html>
