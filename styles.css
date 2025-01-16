@@ -102,3 +102,6 @@ footer {
     transform: translateY(0);
   }
 }
+a {
+  color: #08cdc8;
+}
